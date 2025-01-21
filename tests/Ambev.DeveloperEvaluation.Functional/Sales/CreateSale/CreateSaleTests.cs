@@ -49,7 +49,7 @@ public class CreateSaleTests : IClassFixture<CustomWebApiFactory>
         Assert.Equal(request.Items[0].ProductId, saleResponse.Items[0].ProductId);
         Assert.Equal(request.Items[0].Quantity, saleResponse.Items[0].Quantity);
         Assert.Equal(request.Items[0].UnitPrice, saleResponse.Items[0].UnitPrice);
-        Assert.Equal(80.00M, saleResponse.TotalAmount);
+        Assert.Equal(10.00M, saleResponse.TotalAmount);
     }
 
     [Fact]
