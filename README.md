@@ -33,7 +33,7 @@ coverage-report.bat
 ## Project Structure
 ```
 src/
-├── Ambev.DeveloperEvaluation.WebApi/                 # API entry point
+├── Ambev.DeveloperEvaluation.WebApi/                # API entry point
 ├── Ambev.DeveloperEvaluation.Application/           # Application layer (use cases)
 ├── Ambev.DeveloperEvaluation.Domain/                # Domain layer (entities, value objects)
 ├── Ambev.DeveloperEvaluation.ORM/                   # ORM layer (persistence)
@@ -41,9 +41,9 @@ src/
 ├── Ambev.DeveloperEvaluation.Common/                # Common classes
 
 Tests/
-├── Ambev.DeveloperEvaluation.Integration/ # Integration tests
-├── Ambev.DeveloperEvaluation.Functional/ # Functional tests
-├── Ambev.DeveloperEvaluation.Unit/ # Unit tests
+├── Ambev.DeveloperEvaluation.Integration/           # Integration tests
+├── Ambev.DeveloperEvaluation.Functional/            # Functional tests
+├── Ambev.DeveloperEvaluation.Unit/                  # Unit tests
 ```
 
 ## Testing
