@@ -4,7 +4,6 @@ using Ambev.DeveloperEvaluation.Application.Sales.CreateSale;
 using Ambev.DeveloperEvaluation.Application.Sales.UpdateSale;
 using Ambev.DeveloperEvaluation.Domain.Entities;
 using Ambev.DeveloperEvaluation.Domain.Exceptions;
-using Ambev.DeveloperEvaluation.Domain.Services;
 using Ambev.DeveloperEvaluation.ORM.UnitOfWork;
 using Ambev.DeveloperEvaluation.WebApi.Common;
 using Ambev.DeveloperEvaluation.WebApi.Examples.Responses;
@@ -26,20 +25,17 @@ namespace Ambev.DeveloperEvaluation.WebApi.Features.Sales;
 [Produces("application/json")]
 public class SalesController : BaseController
 {
-    private readonly ISaleService _saleService;
     private readonly IUnitOfWork _unitOfWork;
     private readonly ILogger<SalesController> _logger;
     private readonly IMapper _mapper;
     private readonly IMediator _mediator;
 
     public SalesController(
-        ISaleService saleService,
         IUnitOfWork unitOfWork,
         IMapper mapper,
         IMediator mediator,
         ILogger<SalesController> logger)
     {
-        _saleService = saleService;
         _unitOfWork = unitOfWork;
         _logger = logger;
         _mapper = mapper;
